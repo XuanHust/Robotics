@@ -44,8 +44,6 @@ ISR (TIMER1_OVF_vect)
   }
   if(out<0)
     out=255+out;
-  //digitalWrite(L_EN,HIGH);
- // digitalWrite(R_EN,LOW);
  if(forward){
   digitalWrite(RPWM,LOW);
   analogWrite(LPWM,out);}

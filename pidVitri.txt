@@ -43,8 +43,6 @@ ISR (TIMER1_OVF_vect)
     {out=0;}
 
    
-  //digitalWrite(L_EN,HIGH);
- // digitalWrite(R_EN,LOW);
   digitalWrite(RPWM,LOW);
   analogWrite(LPWM,out);
   //Serial.println(out);
